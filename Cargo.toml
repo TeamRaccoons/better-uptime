@@ -1,0 +1,21 @@
+[package]
+name = "better-uptime"
+authors = ["Siong Ong <siong@raccoons.dev"]
+categories = ["api-bindings"]
+description = "Better Uptime API bindings"
+license = "WTFPL"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/TeamRaccoons/better-uptime"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+tokio = "1"
+anyhow = "1.0"
+
+[dev-dependencies]
+tokio = {version = "1", features = ["full"]}
