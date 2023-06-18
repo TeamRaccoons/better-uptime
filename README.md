@@ -2,14 +2,14 @@
 
 Better Uptime API bindings for Rust.
 
-** APIs
+## APIs
 
 Currently, we only support:
 
 * [Cron and heartbeat monitor](https://betterstack.com/docs/uptime/cron-and-heartbeat-monitor/)
 * [Create a new incident](https://betterstack.com/docs/uptime/api/create-a-new-incident/)
 
-** Examples
+## Examples
 
 To run the examples:
 
