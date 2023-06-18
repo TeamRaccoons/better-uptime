@@ -8,6 +8,10 @@ version = "0.1.0"
 edition = "2021"
 readme = "README.md"
 repository = "https://github.com/TeamRaccoons/better-uptime"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
 
 [dependencies]
 reqwest = { version = "0.11", features = ["json"] }
