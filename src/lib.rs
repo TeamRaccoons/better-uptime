@@ -64,7 +64,7 @@ pub struct Incident {
 
 impl Uptime {
     /// Ping the Uptime API to make sure that the service is up: https://betterstack.com/docs/uptime/cron-and-heartbeat-monitor/
-    pub async fn heartbeat(&self, identifier: String) -> Result<()> {
+    pub async fn heartbeat(identifier: String) -> Result<()> {
         let url = format!("{API_URL}/v1/heartbeat/{identifier}");
         match reqwest::get(url).await?.error_for_status() {
             Ok(_) => Ok(()),
